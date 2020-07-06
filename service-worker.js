@@ -1,4 +1,4 @@
-const CACHE_NAME = "telebook-v1";
+const CACHE_NAME = "telebook-v1.0.1";
 const urls = [
     '/',
     '/index.html',
@@ -28,6 +28,20 @@ self.addEventListener('install', event => {
     event.waitUntil(
       caches.open( CACHE_NAME ).then( cache => {
         return cache.addAll( urls );
+      })
+    );
+});
+
+this.addEventListener('activate', event => {
+    let cacheWhitelist = [CACHE_NAME];
+  
+    event.waitUntil(
+      caches.keys().then( keyList => {
+        return Promise.all( keyList.map( key => {
+          if (cacheWhitelist.indexOf(key) === -1) {
+            return caches.delete(key);
+          }
+        }));
       })
     );
 });
