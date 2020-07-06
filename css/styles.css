@@ -5,11 +5,9 @@
 }
 
 html { 
-    background: #e8ded5 url(../img/ws-og.jpg) repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: #e8ded5 url(../img/ws-og.jpg) no-repeat center center fixed;
     background-size: cover;
+    height: 100vh;
 }
 
 body{
@@ -251,7 +249,7 @@ header .categories a.active {
 /* ****************************** */
 #btnAdd {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     width: 120px;
     height: 50px;
@@ -330,8 +328,6 @@ header .categories a.active {
   }
   
   #contact .form-control:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
     transition: border-color 0.3s ease-in-out;
     border: 1px solid #aaa;
   }
@@ -349,8 +345,6 @@ header .categories a.active {
   
   #contact button[type="submit"]:hover {
     background: #43A047;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
   
@@ -405,7 +399,20 @@ header .categories a.active {
 
 .saving .btn-text {
     opacity: 1;
-    animation: 1s ease-in-out fadeOut infinite forwards;
+    -webkit-animation: 1s ease-in-out fadeOut infinite forwards;
+            animation: 1s ease-in-out fadeOut infinite forwards;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fadeOut {
@@ -432,7 +439,8 @@ header .categories a.active {
     display: flex;
     flex-direction: column;
     text-align: center;
-    animation: popup 0.6s;
+    -webkit-animation: popup 0.6s;
+            animation: popup 0.6s;
 }
 
 .overlay .container-popup h3 {
@@ -473,6 +481,27 @@ header .categories a.active {
 }
 .overlay .container-popup .botones .confirmar:hover {
     background: #1fb456;
+}
+
+@-webkit-keyframes popup {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes popup {
@@ -537,7 +566,8 @@ header .categories a.active {
 
 #logo {
     fill: transparent;
-    animation: fill 0.5s ease forwards 4.5s;
+    -webkit-animation: fill 0.5s ease forwards 4.5s;
+            animation: fill 0.5s ease forwards 4.5s;
     height: 45px;
 }
 
@@ -549,53 +579,74 @@ header .categories a.active {
 #logo path:nth-child(1) {
     stroke-dasharray: 261.08px;
     stroke-dashoffset: 261.08px;
-    animation: stroke 2s ease forwards;
+    -webkit-animation: stroke 2s ease forwards;
+            animation: stroke 2s ease forwards;
 }
 #logo path:nth-child(2) {
     stroke-dasharray: 327.07px;
     stroke-dashoffset: 327.07px;
-    animation: stroke 2s ease forwards 0.3s;
+    -webkit-animation: stroke 2s ease forwards 0.3s;
+            animation: stroke 2s ease forwards 0.3s;
 }
 #logo path:nth-child(3) {
     stroke-dasharray: 227.61px;
     stroke-dashoffset: 227.61px;
-    animation: stroke 2s ease forwards 0.6s;
+    -webkit-animation: stroke 2s ease forwards 0.6s;
+            animation: stroke 2s ease forwards 0.6s;
 }
 #logo path:nth-child(4) {
     stroke-dasharray: 326.72px;
     stroke-dashoffset: 326.72px;
-    animation: stroke 2s ease forwards 0.9s;
+    -webkit-animation: stroke 2s ease forwards 0.9s;
+            animation: stroke 2s ease forwards 0.9s;
 }
 #logo path:nth-child(5) {
     stroke-dasharray: 107.66px;
     stroke-dashoffset: 107.66px;
-    animation: stroke 2s ease forwards 1.2s;
+    -webkit-animation: stroke 2s ease forwards 1.2s;
+            animation: stroke 2s ease forwards 1.2s;
 }
 
 #logo path:nth-child(6) {
     stroke-dasharray: 365.46px;
     stroke-dashoffset: 365.46px;
-    animation: stroke 2s ease forwards 1.5s;
+    -webkit-animation: stroke 2s ease forwards 1.5s;
+            animation: stroke 2s ease forwards 1.5s;
 }
 #logo path:nth-child(7) {
     stroke-dasharray: 308.17px;
     stroke-dashoffset: 308.17px;
-    animation: stroke 2s ease forwards 1.8s;
+    -webkit-animation: stroke 2s ease forwards 1.8s;
+            animation: stroke 2s ease forwards 1.8s;
 }
 #logo path:nth-child(8) {
     stroke-dasharray: 308.17px;
     stroke-dashoffset: 308.17px;
-    animation: stroke 2s ease forwards 2.1s;
+    -webkit-animation: stroke 2s ease forwards 2.1s;
+            animation: stroke 2s ease forwards 2.1s;
 }
 #logo path:nth-child(9) {
     stroke-dasharray: 325.94px;
     stroke-dashoffset: 325.94px;
-    animation: stroke 2s ease forwards 2.4s;
+    -webkit-animation: stroke 2s ease forwards 2.4s;
+            animation: stroke 2s ease forwards 2.4s;
+}
+
+@-webkit-keyframes stroke{
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes stroke{
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes fill {
+    to {
+        fill: #000;
     }
 }
 
@@ -639,7 +690,17 @@ footer .socials-networks a i{
 }
 
 footer .icon-container:hover a {
-    animation: icono .5s ease;
+    -webkit-animation: icono .5s ease;
+            animation: icono .5s ease;
+}
+
+@-webkit-keyframes icono {
+    from{
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
 }
 
 @keyframes icono {
@@ -698,7 +759,17 @@ footer .ref-btns .btn.dieguin { background: #0097A7; }
 
 footer .ref-btns .btn:hover {
     cursor: pointer;
-    animation: refs .5s ease;
+    -webkit-animation: refs .5s ease;
+            animation: refs .5s ease;
+}
+
+@-webkit-keyframes refs {
+    from{
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(1, 0, 0, 360deg);
+    }
 }
 
 @keyframes refs {
@@ -853,7 +924,7 @@ footer .ref-btns .btn:hover {
         font-size: 0.7em;
     }
     #btnAdd i {
-        margin: 0 5px 0 5px;
+        margin: 0 10px 0 5px;
     }
 
     .card {
