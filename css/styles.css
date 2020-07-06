@@ -5,7 +5,7 @@
 }
 
 html { 
-    background: #e8ded5 url(../img/ws-og.jpg) no-repeat center center fixed;
+    background: #e8ded5 url(../img/ws-og.jpg) repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
