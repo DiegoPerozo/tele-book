@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://telebook.netlify.app" aria-hidden="true"><img src="https://raw.githubusercontent.com/DiegoPerozo/tele-book/master/img/thumbail.jpg" alt="Tele-BOOK" width="1200" /></a>
+  <a href="https://telebook.netlify.app" aria-hidden="true"><img src="https://raw.githubusercontent.com/DiegoPerozo/tele-book/master/img/thumbail%20.jpg" alt="Tele-BOOK" width="1200" /></a>
 </h1>
 
 Una agenda donde se pueden almacenar los contactos y tenerlos de forma local en el navegador, con funcionalidad offline para que se puedan revisar en cualquier momento.
