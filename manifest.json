@@ -1,6 +1,6 @@
 {
-    "name": "Tele-Book Agenda",
     "short_name": "Tele-Book",
+    "name": "Tele-Book Agenda",
     "description": "Una agenda sencilla que funciona sin conexion.",
     "lang": "es-ES",
     "start_url": "/",
@@ -10,13 +10,13 @@
     "icons": [
         {
             "src": "favicon.png",
-            "size": "64x64, 32x32, 24x24, 16x16",
-            "type": "image/x-icon"
+            "type": "image/x-icon",
+            "sizes": "64x64, 32x32, 24x24, 16x16"
         },
         {
             "src": "favicon.png",
-            "size": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "sizes": "512x512"
         }
     ]
 }
