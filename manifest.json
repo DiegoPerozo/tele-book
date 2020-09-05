@@ -1,7 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
-    "description": "",
+    "name": "Tele-Book Agenda",
+    "short_name": "Tele-Book",
+    "description": "Una agenda sencilla que funciona sin conexion.",
     "lang": "es-ES",
     "start_url": ".",
     "scope": ".",
