@@ -1,0 +1,23 @@
+{
+    "name": "",
+    "short_name": "",
+    "description": "",
+    "lang": "es-ES",
+    "start_url": ".",
+    "scope": ".",
+    "display": "standalone",
+    "background_color": "#e8ded5",
+    "theme_color": "#000000",
+    "icon": [
+        {
+            "src": "favicon.png",
+            "size": "64x64, 32x32, 24x24, 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "favicon.png",
+            "size": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

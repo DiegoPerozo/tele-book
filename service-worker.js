@@ -1,7 +1,9 @@
-const CACHE_NAME = "telebook-v1.0.1";
+const CACHE_NAME = "telebook-v1.0.2";
 const urls = [
     '/',
     '/index.html',
+    '/favicon.png',
+    '/manifest.json',
     '/css/toastr.min.css',
     '/css/font-awesome.min.css',
     '/css/styles.css',
