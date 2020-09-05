@@ -4,11 +4,10 @@
     "description": "Una agenda sencilla que funciona sin conexion.",
     "lang": "es-ES",
     "start_url": "/",
-    "scope": "/",
     "display": "standalone",
     "background_color": "#e8ded5",
     "theme_color": "#000000",
-    "icon": [
+    "icons": [
         {
             "src": "favicon.png",
             "size": "64x64, 32x32, 24x24, 16x16",
