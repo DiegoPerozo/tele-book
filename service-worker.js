@@ -1,4 +1,4 @@
-const CACHE_NAME = "telebook-v1.0.4";
+const CACHE_NAME = "telebook-v1.0.5";
 const urls = [
     '/',
     '/index.html',
