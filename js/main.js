@@ -7,14 +7,34 @@ const grid = new Muuri('.grid',{
 
 var isLoading = false;
 
+const notyf = new Notyf({
+    duration: 3000,
+    position: {
+        x: 'right',
+        y: 'top'
+    },
+    types: [
+        {
+            type: 'info',
+            background: 'lightslategrey',
+            icon: false
+        }
+    ]
+});
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
 
         navigator.serviceWorker.register('/service-worker.js').then( function(reg) {
           if(reg.active) {
-              toastr.info("","Listo para funcionar Offline!", { positionClass: "toast-bottom-left", timeOut: "3000"});
-          }else {
-              toastr.info("","Preparando modo Offline!", { positionClass: "toast-bottom-left", timeOut: "3000"});
+              notyf.open({
+                  type: 'info',
+                  message: 'Listo para funcionar Offline!',
+                  position: {
+                      x: 'left',
+                      y: 'bottom'
+                  }
+              });
           }
         }).catch(function(error) {
           console.log('Fallo el registro: ' + error);
@@ -115,10 +135,6 @@ window.addEventListener('load', () => {
     listenersForm();
     listenerInputs();
 
-    // document.querySelectorAll('#logo path').forEach( (path) => {
-    //     console.log(path.getTotalLength());
-    // });
-
 });
 
 /* ****************************** */
@@ -204,7 +220,7 @@ async function agregarContacto(){
 
         loaded();
         document.querySelector('#contact').reset();
-        toastr.success(`Contacto ${contacto.nombre} agregado!!`);
+        notyf.success({ message: "Contacto "+contacto.nombre+" agregado!!" });
     });
 }
 
@@ -253,7 +269,7 @@ async function modificarContacto(){
         document.querySelector('#contact').reset();
         document.querySelector('#overlayForm').classList.remove('active');
 
-        toastr.success("Contacto modificado!!");
+        notyf.success("Contacto modificado!!");
     });
 }
 

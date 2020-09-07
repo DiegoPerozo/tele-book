@@ -1,10 +1,10 @@
-const CACHE_NAME = "telebook-v1.0.5";
+const CACHE_NAME = "telebook-v1.1.0";
 const urls = [
     '/',
     '/index.html',
     '/favicon.png',
     '/manifest.json',
-    '/css/toastr.min.css',
+    '/css/notyf.min.css',
     '/css/font-awesome.min.css',
     '/css/styles.css',
     '/fonts/FontAwesome.otf',
@@ -18,9 +18,7 @@ const urls = [
     '/img/otros.png',
     '/img/trabajo.png',
     '/img/ws-og.jpg',
-    '/js/jquery-2.2.3.min.js',
-    '/js/toastr.js.map',
-    '/js/toastr.min.js',
+    '/js/notyf.min.js',
     '/js/web-animations.min.js',
     '/js/muuri.min.js',
     '/js/main.js'
