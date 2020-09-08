@@ -16,13 +16,13 @@ Una agenda donde se pueden almacenar los contactos y tenerlos de forma local en 
 
 - Los datos se guardan de manera local en el navegador, asi que los contactos estan seguros y solos visibles para usted.
 - Puede marcar el numero o abrir un chat de WhatsApp directamente desde la informacion del contacto.
-- Puede funciona de manera offline gracias al Serice Worker.
+- Puede funcionar de manera offline gracias al Serice Worker.
+- Soporte "Add to home screen" para agregar la pagina como APP en el telefono.
 
 <h2><a id="tech" href="#tech" aria-hidden="true">#</a> Tecnologias</h2>
 
 - [MuuriJS](https://github.com/haltu/muuri)
-- [Toastr](https://github.com/CodeSeven/toastr)
-- JQuery 2.2.3 - Solo para el uso de Toastr.
+- [Notyf](https://github.com/caroso1222/notyf)
 - Font-Awesome.
 - Service Workers.
 
